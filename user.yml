@@ -1,0 +1,13 @@
+- name: User
+  hosts: demo
+  tasks:
+    - name: Create user
+      vars:
+        user: alaricode
+      user:
+        name: "{{ user }}"
+        state: present
+      become: true
+      register: out
+    - debug:
+        var: out

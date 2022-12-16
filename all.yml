@@ -1,0 +1,7 @@
+---
+- name: All congigs
+  hosts: cluster
+  roles:
+    - preconfig
+    - deploy
+    

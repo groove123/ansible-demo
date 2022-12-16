@@ -1,0 +1,9 @@
+argument_specs:
+  main:
+    description: Настройка серверов для работы с Docker
+    author: Alexey Ekimov
+    licence: MIT
+    min_ansible_version: 2.9
+    platform: Ubuntu
+dependencies:
+  - role: deploy
